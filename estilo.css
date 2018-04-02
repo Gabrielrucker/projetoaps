@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web|Ubuntu+Condensed');
+
+p {
+	text-align: justify;
+	text-indent: 15px;
+}
+
+body {
+	background-color: white;
+	background-image: url("../_imagens/floresta.jpg");
+	background-repeat: no-repeat;	
+	color: black;
+	font-family: Arial, sans-serife;
+	font-size: 12pt;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+div#interface {
+	width: 950px;
+	margin: -10px auto auto auto;
+	padding: 10px;
+	background-color: lightgray;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+}	
+
+div#interface h2 {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+nav#menu {
+	display: block;
+}		
+
+header#cabecalho {
+	border-bottom: 2px black solid;
+}
+
+header#cabecalho h1 {
+	text-shadow: 2px 2px 2px black;
+	color: darkgreen;
+	font-size: 30pt;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+nav#menu ul	{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 750px;
+
+}	
+nav#menu li {
+	display: inline-block;
+	background-color: lightgray;
+	padding: 10px;
+	margin: -2px;
+	transition: background-color 1s;
+	border: 1px solid black;
+}
+
+nav#menu li:hover {
+	background-color: white;
+}	
+
+nav#menu a {
+	text-decoration: none;
+	color: darkgreen;
+}
+
+nav#menu a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+nav#menu h1 {
+	display: none;
+}	
+
+figure.legenda-foto {
+	position: relative;
+	border: 3px solid black;
+	box-shadow: 5px 5px 5px black;
+	max-width: 500px;
+	max-height: 270px;
+}	
+
+figure.legenda-foto img {
+	max-width: 500px;
+	max-height: 288px;
+}
+
+figure.legenda-foto figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(60,60,60,.5);
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}	
+
+figure.legenda-foto figcaption:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+footer#rodape p {
+	text-align: center;
+	margin: 5px;
+}
+
+footer#rodape {
+	border-top: 1px solid black;
+}
+
+/* DICAS */
+
+table#tabela_dicas {
+	border: 1px solid black;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabela_dicas td {
+	border: 1px solid black;
+	padding: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+table#tabela_dicas td.ce {
+	color: black;
+	background-color: #606060;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+table#tabela_dicas td.cd {
+	text-align: left;
+	color: black;
+	background-color: #cecece;
+}
+
+table#tabela_dicas caption {
+	font-weight: bolder;
+	font-size: 15pt;
+	margin-bottom: 5px;
+}
